@@ -1,0 +1,154 @@
+
+@import 'variables';
+
+
+/***************
+// COMPONENTS
+****************/
+
+/***************
+// BUTTONS
+****************/
+.btn-broken{
+    background-color: $color-primary;
+    color: #fff;
+}
+
+/***************
+// NAVIGATION
+****************/
+
+.navigation{
+
+    A{
+        color: $header-link-color;
+
+        &:HOVER{
+            color: $header-link-color-hover;
+        }
+    }
+}
+
+.header{
+    &-title{
+
+        align-items: flex-end;
+        margin-top: 4rem;
+        
+        H1{
+            color: $header-title-heading-color;
+        }
+
+        SMALL{
+            color: $header-title-subheading-color;
+        }
+
+        .btn-header-cta{
+            color: $header-title-button-color;
+            background: $header-title-button-bg;
+            width: fit-content;
+            margin-top: 20px;
+            font-size: 1rem;
+
+            &:hover{
+                color: $header-title-button-bg;                
+                background: $header-title-button-color;
+                border: none;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.footer{
+    background: $footer-bg;
+
+    A{
+        color: $footer-link-color;
+        
+        &:hover{
+            color: $footer-link-color-hover;
+
+        }
+    }
+
+    * {
+        color: $footer-link-color;
+    }
+
+    H2, H3, H4, H5{
+        font-weight: 700;
+    }
+
+    .copy{
+
+        P{
+            padding-bottom: 5px;
+
+        }
+    }
+}
+
+.grid{
+
+    gap: 20px;
+
+    .card{
+        box-shadow: 7px 5px 9px -2px #e3e3e3;
+        transition: all .1s ease-in;
+
+        &:hover{
+            transform: translateY(-10px);
+        }
+
+        &-image{
+
+            IMG{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-content{
+            padding: 20px;
+        }
+    }
+}
+
+/***************
+// PROFILE
+****************/
+
+/***************
+// FORMS
+****************/
+.contact{
+
+    .info-wrap{
+        color: #fff;
+    }
+    
+    .dbox{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+        color: #fff;
+
+        P, A{
+            margin-bottom: 0;
+            color: #fff;
+        }
+
+        .icon{
+            font-size: 20px;
+        }
+    }
+
+    FORM{
+
+        #cMessage{
+            min-height: 200px;
+        }
+    }
+}
